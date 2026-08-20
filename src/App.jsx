@@ -1,31 +1,24 @@
-import { useState } from 'react'
-import Toolbar from './components/Toolbar.jsx'
-import Hero from './components/Hero.jsx'
-import Work from './components/Work.jsx'
-import About from './components/About.jsx'
-import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx'
-import ProjectModal from './components/ProjectModal.jsx'
-import { projects } from './data/projects.js'
+import { useState } from "react";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import Work from "./components/Work.jsx";
+import ProjectModal from "./components/ProjectModal.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+import { projects } from "./data/projects.js";
 
 export default function App() {
-  const [activeId, setActiveId] = useState(null)
-  const activeProject = activeId ? projects[activeId] : null
+  const [activeId, setActiveId] = useState(null);
+  const active = projects.find((p) => p.id === activeId) ?? null;
 
   return (
-    <>
-      <Toolbar />
-
-      <main id="top">
-        <Hero />
-        <Work onOpenProject={setActiveId} />
-        <About />
-        <Contact />
-      </main>
-
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <Hero />
+      <Work projects={projects} onOpenProject={setActiveId} />
+      <ProjectModal project={active} onClose={() => setActiveId(null)} />
+      <Contact />
       <Footer />
-
-      <ProjectModal project={activeProject} onClose={() => setActiveId(null)} />
-    </>
-  )
+    </div>
+  );
 }

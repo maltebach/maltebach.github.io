@@ -1,20 +1,33 @@
 export default function Hero() {
   return (
-    <section className="hero">
-      <p className="hero__eyebrow">Digital Designer — Copenhagen</p>
-      <h1 className="hero__headline">
-        Malte<br />
-        <em>Bach </em>
-        Hansen<span className="caret" aria-hidden="true"></span>
-      </h1>
-      <p className="hero__sub">
-        MSc student in Digital Design &amp; Interactive Technologies, working
-        across UX design, rapid prototyping, and AI-driven digital products —
-        grounded in user research and a lot of hands-on making.
-      </p>
-      <div className="hero__actions">
-        <a href="#work" className="btn btn--primary">View work</a>
+    <section id="about" className="mx-auto max-w-7xl px-6 pb-20 pt-12 md:px-12 md:pb-32 md:pt-20">
+      <div className="max-w-4xl">
+        <p className="mb-6 font-display text-sm font-medium uppercase tracking-widest text-primary">
+          Interaction Designer
+        </p>
+        <h1 className="text-balance font-sans text-3xl font-medium leading-tight tracking-tight text-foreground md:text-4xl lg:text-5xl">
+          Malte Bach Hansen{" "}
+          <span className="text-muted-foreground">Portfolio</span>
+        </h1>
+        <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground md:text-xl">
+          MSc student in Digital Design & Interactive Technologies, working across UX design, rapid prototyping,
+          and AI-driven digital products — grounded in user research and a lot of hands-on making.
+        </p>
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href="#work"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+          >
+            View work
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-card-foreground transition-colors hover:bg-accent"
+          >
+            Get in touch
+          </a>
+        </div>
       </div>
     </section>
-  )
+  );
 }
