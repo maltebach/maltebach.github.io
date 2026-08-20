@@ -3,9 +3,9 @@ export default function Hero() {
     <section className="hero">
       <p className="hero__eyebrow">Digital Designer — Copenhagen</p>
       <h1 className="hero__headline">
-        I turn complex problems<br />
-        into interfaces that <em>just</em><br />
-        make sense<span className="caret" aria-hidden="true"></span>
+        Malte<br />
+        <em>Bach </em>
+        Hansen<span className="caret" aria-hidden="true"></span>
       </h1>
       <p className="hero__sub">
         MSc student in Digital Design &amp; Interactive Technologies, working
