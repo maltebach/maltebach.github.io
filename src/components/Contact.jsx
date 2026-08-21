@@ -27,14 +27,14 @@ export default function Contact() {
               >
                 LinkedIn
               </a>
-              <a
+              {/*<a
                 href="https://www.behance.net/maltebachhansen"
                 target="_blank"
                 rel="noreferrer"
                 className="transition-colors hover:text-foreground"
               >
                 Behance
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>

@@ -8,13 +8,15 @@ export const projects = [
     category: "Multisensory museum experience",
     tags: ["Spatial", "Exhibition", "Master's thesis"],
     description:
-      "Life Through Water is an interactive museum installation about Nordhavn and the transformation of harbor baths through time. The project was part of my master's thesis in collaboration with the National Museum of Denmark, and features embodied interactions, multisensory cues and an engaging narrative. The installation is a shared experience for multiple people, and takes place inside a remodeled caravan designed with a sauna interior. It was exhibited as part of a larger exhibition, and will be displayed around Copenhagen for the next two years.",
+      "Life Through Water is an interactive museum installation about Nordhavn and the transformation of harbor baths through time. The project was part of my master's thesis in collaboration with the National Museum of Denmark, and features embodied interactions, multisensory cues and an engaging narrative. The installation is a shared experience for multiple people, and takes place inside a remodeled caravan designed with a sauna interior. It was exhibited as part of a larger exhibition, and is displayed around Copenhagen in 2026 and 2027.",
     cover: { src: "/assets/img/life-through-water/ltwFront.jpg", alt: "The caravan installation exterior, painted with a Nordhavn map graphic" },
     gallery: [
       { src: "/assets/img/life-through-water/ltw1.jpg", alt: "Projected footage of a diver wrapping the interior walls of the caravan" },
       { src: "/assets/img/life-through-water/ltw2.jpg", alt: "Visitor interacting with a projected scene using a wooden object" },
+      { src: "/assets/img/life-through-water/ltw5.jpg", alt: "Hourglass interaction" },
       { src: "/assets/img/life-through-water/ltw3.jpg", alt: "The caravan installation on-site as part of the exhibition" },
       { src: "/assets/img/life-through-water/ltw4.jpg", alt: "The Myths & Bricks info point sign next to the caravan" },
+      
     ],
     video: { src: "/assets/video/life-through-water-trailer.mp4", poster: "/assets/img/ltwFront.jpg" },
   },
@@ -49,7 +51,7 @@ export const projects = [
   {
     id: "decibel-defender",
     title: "DecibelDefender",
-    category: "VR experience for awareness of hearing impairments",
+    category: "VR experience about hearing impairments",
     tags: ["VR", "Accessibility", "Health communication"],
     description:
       "This project explored how virtual reality can be used to raise awareness of hearing impairment and encourage healthier listening habits among concert and festival attendees. We designed a multiplayer VR experience that placed participants in a festival setting and simulated the experience of hearing impairment, using immersion and embodiment to create a more personal understanding of hearing health.\n\nThe experience was evaluated through pre- and post-tests and qualitative interviews, focusing on changes in knowledge, attitudes, and behavior. The results showed that VR was particularly effective in fostering empathy and positively influencing attitudes and behaviors, while improvements in factual knowledge were more limited. The project highlighted the potential of immersive experiences as a tool for health communication, while emphasizing the importance of balancing emotional engagement with clear educational content.",

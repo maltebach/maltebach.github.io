@@ -10,7 +10,8 @@ export default function Hero() {
           <span className="text-muted-foreground">Portfolio</span>
         </h1>
         <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground md:text-xl">
-          I design interactive experiences where storytelling, technology, and physical space come together — from early concepts and prototypes to tangible, engaging experiences.
+          I design interactive experiences where storytelling, technology, and physical space come together. <br />
+          From early concepts and prototypes to tangible, engaging experiences.
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a

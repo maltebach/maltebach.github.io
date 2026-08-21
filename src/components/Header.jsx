@@ -8,9 +8,9 @@ export default function Header() {
         <a href="#work" className="text-muted-foreground transition-colors hover:text-foreground">
           Work
         </a>
-        <a href="#about" className="text-muted-foreground transition-colors hover:text-foreground">
+        {/*<a href="#about" className="text-muted-foreground transition-colors hover:text-foreground">
           About
-        </a>
+        </a>*/}
         <a href="#contact" className="text-muted-foreground transition-colors hover:text-foreground">
           Contact
         </a>
