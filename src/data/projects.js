@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     id: "karensminde",
-    title: "Karens Minde — An Unheard Story",
+    title: "Karens Minde",
     category: "Gesture-based interactive story",
     tags: ["Gesture", "Storytelling", "TouchDesigner"],
     description:
@@ -48,7 +48,7 @@ export const projects = [
   },
   {
     id: "decibel-defender",
-    title: "DecibelDefender — Hearing Health in VR",
+    title: "DecibelDefender",
     category: "VR experience for awareness of hearing impairments",
     tags: ["VR", "Accessibility", "Health communication"],
     description:
@@ -76,7 +76,7 @@ export const projects = [
     },
   {
     id: "sea-savers",
-    title: "Sea Savers — Life Below Water",
+    title: "Sea Savers",
     category: "Serious multiplayer game about plastic pollution",
     tags: ["Serious game", "Multiplayer", "Sustainability"],
     description:
