@@ -60,7 +60,7 @@ export default function Work({ projects, onOpenProject }) {
                 {project.category}
               </p>
               <span className="mt-4 inline-flex text-sm font-semibold text-primary">
-                View case study →
+                View →
               </span>
             </div>
           </button>

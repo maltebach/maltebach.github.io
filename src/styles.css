@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* css-lsp-disable unknownAtRules -- Tailwind CSS v4 directive */
 @custom-variant dark (&:is(.dark *));
+/* css-lsp-enable unknownAtRules */
 
 /*
  * Design system: minimal orange + black interaction-design portfolio.
