@@ -9,11 +9,12 @@ export const projects = [
     tags: ["Spatial", "Exhibition", "Master's thesis"],
     description:
       "Life Through Water is an interactive museum installation about Nordhavn and the transformation of harbor baths through time. The project was part of my master's thesis in collaboration with the National Museum of Denmark, and features embodied interactions, multisensory cues and an engaging narrative. The installation is a shared experience for multiple people, and takes place inside a remodeled caravan designed with a sauna interior. It was exhibited as part of a larger exhibition, and is displayed around Copenhagen in 2026 and 2027.",
-    cover: { src: "/assets/img/life-through-water/ltwFront.jpg", alt: "The caravan installation exterior, painted with a Nordhavn map graphic" },
+    cover: { src: "/assets/img/life-through-water/ltwFront1.png", alt: "The caravan installation exterior, painted with a Nordhavn map graphic" },
     gallery: [
       { src: "/assets/img/life-through-water/ltw1.jpg", alt: "Projected footage of a diver wrapping the interior walls of the caravan" },
       { src: "/assets/img/life-through-water/ltw2.jpg", alt: "Visitor interacting with a projected scene using a wooden object" },
       { src: "/assets/img/life-through-water/ltw5.jpg", alt: "Hourglass interaction" },
+      { src: "/assets/img/life-through-water/ltwFront.jpg", alt: "The caravan installation exterior, painted with a Nordhavn map graphic" },
       { src: "/assets/img/life-through-water/ltw3.jpg", alt: "The caravan installation on-site as part of the exhibition" },
       { src: "/assets/img/life-through-water/ltw4.jpg", alt: "The Myths & Bricks info point sign next to the caravan" },
       

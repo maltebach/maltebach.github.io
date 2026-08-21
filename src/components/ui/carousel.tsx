@@ -134,10 +134,44 @@ Carousel.displayName = "Carousel";
 
 const CarouselContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => {
-    const { carouselRef, orientation } = useCarousel();
+    const { carouselRef, orientation, scrollPrev, scrollNext } = useCarousel();
+    const lastWheelTime = React.useRef(0);
+
+    const handleWheel = React.useCallback(
+      (event: React.WheelEvent<HTMLDivElement>) => {
+        if (orientation !== "horizontal") {
+          return;
+        }
+
+        const delta =
+          Math.abs(event.deltaX) > Math.abs(event.deltaY)
+            ? event.deltaX
+            : event.shiftKey
+              ? event.deltaY
+              : 0;
+
+        if (!delta || Math.abs(delta) < 8 || Date.now() - lastWheelTime.current < 500) {
+          return;
+        }
+
+        event.preventDefault();
+        lastWheelTime.current = Date.now();
+
+        if (delta > 0) {
+          scrollNext();
+        } else {
+          scrollPrev();
+        }
+      },
+      [orientation, scrollNext, scrollPrev],
+    );
 
     return (
-      <div ref={carouselRef} className="overflow-hidden">
+      <div
+        ref={carouselRef}
+        onWheel={handleWheel}
+        className="cursor-grab touch-pan-y select-none overflow-hidden active:cursor-grabbing"
+      >
         <div
           ref={ref}
           className={cn(
